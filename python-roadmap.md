@@ -1,41 +1,46 @@
 # Python Roadmap
 
-This roadmap is designed to guide you through becoming a proficient Python developer, starting from the very basics and moving into more advanced topics and practical application.
+This roadmap is designed to guide you from beginner to proficient Python developer — starting with the fundamentals and building toward advanced concepts and practical applications.
 
-<details> <summary><strong>Learn the Basics</strong></summary>
+## 1. Learn the Basics
 
-Basic Syntax
+### Start with the core syntax and foundational programming concepts.
 
-Variables and Data Types
+- Basic Syntax
 
-Working with Strings
+- Variables and Data Types
 
-Conditionals
+- Working with Strings
 
-Loops
+- Conditionals
 
-Type Casting
+- Loops
 
-Exceptions
+- Type Casting
 
-Functions, Builtin Functions
+- Exceptions
 
-Lists
+- Functions
 
-Tuples
+- Built-in Functions
 
-Sets
+- Lists
 
-Dictionaries
+- Tuples
 
-</details>
-<details> <summary><strong>Data Structures & Algorithms</strong></summary>
+- Sets
+
+- Dictionaries
+
+## 2. Data Structures & Algorithms
+
+### Learn how Python stores and processes data efficiently.
 
 Arrays and Linked Lists
 
 Hash Tables
 
-Heaps, Stacks and Queues
+Heaps, Stacks, and Queues
 
 Binary Search Tree
 
@@ -43,44 +48,37 @@ Recursion
 
 Sorting Algorithms
 
-</details>
-<details> <summary><strong>Modules</strong></summary>
+## 3. Modules and Functions
 
-Builtin
+### Understand how to organize and reuse your code.
 
-Custom
+Modules
 
-</details>
-<details> <summary><strong>Lambdas</strong></summary>
+Built-in Modules
 
-Short, anonymous functions using the lambda keyword.
+Custom Modules
 
-</details>
-<details> <summary><strong>Decorators</strong></summary>
+Lambdas
 
-Functions that modify the behavior of other functions.
+Decorators
 
-</details>
-<details> <summary><strong>Iterators</strong></summary>
+Iterators
 
-Learn how iteration works internally using __iter__() and __next__().
+Regular Expressions
 
-</details>
-<details> <summary><strong>Regular Expressions</strong></summary>
+## 4. Object Oriented Programming (OOP)
 
-Pattern matching and text searching using the re module.
-
-</details>
-<details> <summary><strong>Object Oriented Programming</strong></summary>
+### Learn how to structure larger programs using objects and classes.
 
 Classes
 
 Inheritance
 
-Methods, Dunder Methods (__init__, __str__, etc.)
+Methods and Dunder Methods
 
-</details>
-<details> <summary><strong>Package Managers</strong></summary>
+## 5. Package Managers
+
+### Master the tools that manage Python dependencies.
 
 pip
 
@@ -94,45 +92,33 @@ Conda
 
 uv
 
-</details>
-<details> <summary><strong>Common Packages</strong></summary>
+## 6. Common Packages
 
-Familiarize yourself with frequently used Python libraries and tools.
+### Understand commonly used Python packages and how to configure them.
 
-</details>
-<details> <summary><strong>Configuration</strong></summary>
+Configuration
 
 pyproject.toml
 
-</details>
-<details> <summary><strong>List Comprehensions</strong></summary>
+List Comprehensions
 
-Compact way to create lists using expressions inside brackets.
+Generator Expressions
 
-</details>
-<details> <summary><strong>Generator Expressions</strong></summary>
+Paradigms
 
-Lazy iterables created using parentheses instead of brackets.
+Context Managers
 
-</details>
-<details> <summary><strong>Paradigms</strong></summary>
+## 7. Learn a Framework
 
-Understand procedural, functional, and object-oriented programming approaches.
+### Choose a framework based on your project type and goals.
 
-</details>
-<details> <summary><strong>Context Manager</strong></summary>
-
-Use with statements for resource management (__enter__ and __exit__ methods).
-
-</details>
-<details> <summary><strong>Learn a Framework</strong></summary>
-Synchronous
+Synchronous Frameworks
 
 Pyramid
 
 Plotly Dash
 
-Asynchronous
+Asynchronous Frameworks
 
 Tornado
 
@@ -142,7 +128,7 @@ Sanic
 
 aiohttp
 
-Synchronous + Asynchronous
+Hybrid (Synchronous + Asynchronous)
 
 FastAPI
 
@@ -150,19 +136,21 @@ Django
 
 Flask
 
-</details>
-<details> <summary><strong>Concurrency</strong></summary>
+## 8. Concurrency
+
+### Learn how Python handles multiple tasks simultaneously.
 
 Multiprocessing
 
 Asynchrony
 
-GIL (Global Interpreter Lock)
+Global Interpreter Lock (GIL)
 
 Threading
 
-</details>
-<details> <summary><strong>Environments</strong></summary>
+## 9. Environments
+
+### Manage isolated project environments and dependencies.
 
 pyenv
 
@@ -170,8 +158,9 @@ virtualenv
 
 Pipenv
 
-</details>
-<details> <summary><strong>Static Typing</strong></summary>
+## 10. Static Typing
+
+### Add type hints and validation to improve code safety.
 
 typing
 
@@ -183,8 +172,9 @@ pyright
 
 mypy
 
-</details>
-<details> <summary><strong>Code Formatting</strong></summary>
+## 11. Code Formatting
+
+### Keep your code clean and consistent.
 
 yapf
 
@@ -192,18 +182,19 @@ black
 
 ruff
 
-</details>
-<details> <summary><strong>Documentation</strong></summary>
+## 12. Documentation
+
+### Learn to create professional project documentation.
 
 Sphinx
 
-</details>
-<details> <summary><strong>File Handling</strong></summary>
+## 13. File Handling
 
-Learn how to read, write, and manage files in Python.
+### Work with files and directories in Python.
 
-</details>
-<details> <summary><strong>Testing</strong></summary>
+## 14. Testing
+
+### Write and automate tests to ensure your code works as intended.
 
 tox
 
@@ -213,4 +204,15 @@ doctest
 
 pytest
 
-</details>
+End Goal
+
+
+### By following this roadmap, you will:
+
+- Build a solid foundation in Python programming.
+
+- Understand core computer science concepts.
+
+- Be comfortable with real-world frameworks and tools.
+
+- Develop production-ready, testable, and maintainable code.
