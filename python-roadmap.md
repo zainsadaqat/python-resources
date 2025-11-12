@@ -1,6 +1,6 @@
 # Python Roadmap
 
-This roadmap is designed to guide you from beginner to proficient Python developer — starting with the fundamentals and building toward advanced concepts and practical applications.
+This roadmap is designed to guide you from beginner to proficient Python developer, starting with the fundamentals and building toward advanced concepts and practical applications.
 
 ## 1. Learn the Basics
 
@@ -36,17 +36,17 @@ This roadmap is designed to guide you from beginner to proficient Python develop
 
 ### Learn how Python stores and processes data efficiently.
 
-Arrays and Linked Lists
+- Arrays and Linked Lists
 
-Hash Tables
+- Hash Tables
 
-Heaps, Stacks, and Queues
+- Heaps, Stacks, and Queues
 
-Binary Search Tree
+- Binary Search Tree
 
-Recursion
+- Recursion
 
-Sorting Algorithms
+- Sorting Algorithms
 
 ## 3. Modules and Functions
 
