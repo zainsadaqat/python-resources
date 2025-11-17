@@ -29,9 +29,30 @@ print(f"{name} loves Biryani.")
 print(f"{name} ate Biryani for 2 consecutive days.")
 ```
 
+### Question
+If attempts equals five and the code says
+```py
+if attempts > 3:
+    print("Alert")
+else:
+    print("OK")
+```
+What prints?
+
 - Working with Strings
 
 - Conditionals
+
+An if else lets the computer choose between two actions. It checks a condition. If the condition is true it runs one block. Otherwise it runs the other.
+
+### Analogy
+It is like checking the weather. If it is raining you take an umbrella. Else you go without one.
+
+### Example-1
+If a login attempt fails more than three times show a warning. Else allow another try.
+
+### Example-2
+If a file is larger than a safe limit stop the upload. Else continue saving it.
 
 - Loops
 
