@@ -8,7 +8,26 @@ This roadmap is designed to guide you from beginner to proficient Python develop
 
 - Basic Syntax
 
+```py
+print("Hello World")
+```
+
 - Variables and Data Types
+
+### Variables
+A variable is a simple container that holds a value. Think of it like a labeled jar where you can store something and use it later. The label is the name. The thing inside is the value.
+
+### Why we use them
+They let us reuse information, change information, and avoid repeating the same number or text everywhere in code. Without variables you cannot track anything.
+
+### Example
+```py
+name = "John"
+print(f"My name is {name}.")
+print(f"{name} is married.")
+print(f"{name} loves Biryani.")
+print(f"{name} ate Biryani for 2 consecutive days.")
+```
 
 - Working with Strings
 
