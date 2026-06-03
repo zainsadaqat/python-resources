@@ -175,3 +175,178 @@ Why?
 Because functions are objects that can move through the program like data.
 
 Next, exercise will build that foundation.
+
+## Exercise 2 — Function Execution vs Function Object
+
+Predict the output WITHOUT running the code.
+
+```python
+def add(a, b):
+    return a + b
+
+result1 = add
+result2 = add(2, 3)
+
+print(result1)
+print(result2)
+print(type(result1))
+print(type(result2))
+```
+
+Then answer:
+
+1. What exactly is stored in `result1`?
+
+2. What exactly is stored in `result2`?
+
+3. Why are their types different?
+
+4. At what moment does the function body actually execute?
+
+5. Why does Python allow functions to be assigned to variables like normal data?
+
+### Expected Output
+
+```py
+<function add at 0x...>
+5
+<class 'function'>
+<class 'int'>
+```
+
+### 1. What exactly is stored in result1?
+
+result1 stores a reference to the function object add.
+
+Important:
+
+```
+add
+```
+
+does NOT execute anything.
+
+It only retrieves the function object.
+
+___
+
+### 2. What exactly is stored in result2?
+
+add(2, 3)
+
+actually executes the function body:
+
+return a + b
+
+and stores the returned integer.
+
+___
+
+### 3. Why are their types different?
+
+result1 contains a function object.
+
+type(result1)
+
+function
+
+result2 contains the RETURN VALUE produced by executing the function.
+
+type(result2)
+
+int
+
+Critical distinction:
+
+Expression	Result
+add	function object
+add(2, 3)	integer value
+
+This distinction is one of the most important ideas in Python.
+
+Important clarification:
+
+Function IS an object.
+
+In Python:
+
+- integers are objects
+- strings are objects
+- lists are objects
+- functions are objects
+
+Everything in Python is object-oriented internally.
+
+So:
+
+type(add)
+
+returns:
+
+<class 'function'>
+
+Meaning:
+
+- object type = function
+- category = object
+
+___
+
+### 4. At what moment does the function body actually execute?
+
+add
+
+does nothing except retrieve the object.
+
+This:
+
+add(2, 3)
+
+creates a function call frame and executes the body.
+
+Huge concept:
+
+Parentheses trigger execution.
+
+Without parentheses:
+
+object reference
+
+With parentheses:
+
+execution
+
+___
+
+### 5. Why does Python allow functions to be assigned to variables like normal data?
+
+Because in python, functions are first class objects.
+
+This is foundational for:
+
+decorators
+
+callbacks
+
+middleware
+
+dependency injection
+
+plugin systems
+
+event-driven architecture
+
+async frameworks
+
+web routing systems
+
+Example:
+
+```py
+routes = {
+    "/home": home_page,
+    "/about": about_page
+}
+```
+
+Web frameworks work like this internally.
