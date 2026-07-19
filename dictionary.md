@@ -1,4 +1,178 @@
 # Dictionary in Python
+
+## The big picture
+
+A dictionary is fundamentally a combination of three ideas:
+
+```
+Key
+        │
+        ▼
+Hash Function
+        │
+        ▼
+Hash Value (integer)
+        │
+        ▼
+Table Index
+        │
+        ▼
+Hash Table (array)
+        │
+        ▼
+Stored Key–Value Pair
+```
+
+## What is a hash?
+
+A hash is just a number.
+
+Nothing magical.
+
+### Example
+
+```
+"Ali"
+↓
+837492
+
+"John"
+↓
+182933
+
+"Sarah"
+↓
+928372
+```
+
+Python converts objects into integers.
+
+Those integers are called hash values.
+
+Who creates that number?
+
+A function.
+
+Hash Function
+
+Input
+
+Sarah
+
+Output
+
+928372
+
+Every time.
+
+hash("Sarah")
+
+↓
+
+928372
+
+The same input always produces the same hash value (during a given Python process for strings and some other types, Python intentionally randomizes hashes between different runs for security).
+
+Notice
+
+The function does not return the GPA.
+
+It does not return the object.
+
+It only produces a number.
+
+## What is a hash table?
+
+A hash table is simply a large array.
+
+Imagine
+
+```
+Index
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+...
+
+999
+```
+
+Initially
+
+```
+0 → empty
+
+1 → empty
+
+2 → empty
+
+3 → empty
+```
+
+Now
+
+```
+student["Sarah"] = 3.9
+
+Python does roughly
+
+hash("Sarah")
+
+↓
+
+928372
+
+Now it converts that hash into a valid table index.
+
+Conceptually
+
+928372
+
+↓
+
+372
+
+Then stores
+
+372
+
+↓
+
+("Sarah",3.9)
+```
+
+Notice
+
+It didn't search.
+
+It computed.
+
+## The Pattern
+
+Almost every dictionary problem is one of these:
+
+Pattern	Example
+Counting	Count words, votes, products, letters
+Lookup	Student ID → Student
+Remembering the past	Two Sum
+Grouping	Employees by department
+Caching	Save expensive computations
+Fast existence check	Has this username already been used?
+
 ### 1. Why do dictionaries exist?
 ### 2. What problem do they solve?
 ### 3. How are they implemented conceptually (hash table, at a high level)?
@@ -41,14 +215,14 @@ Find Sarah's GPA.
 How would you store students?
 
 Most beginners answer:
-
+```
 students = [
     ("Ali", 3.7),
     ("Sarah", 3.9),
     ("John", 3.2),
     ...
 ]
-
+```
 Ask:
 
 How would you find Sarah?
@@ -496,11 +670,13 @@ Orange
 
 Produce
 
+```
 {
 Apple:3,
 Banana:1,
 Orange:1
 }
+```
 
 Very common interview problem.
 
